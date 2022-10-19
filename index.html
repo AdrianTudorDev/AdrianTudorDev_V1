@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Tudor</title>
+    <link rel="icon" type="image/x-icon" href="./flavicon/favicon-16x16.png">
+    <!-- CSS only -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+        crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous"
+        defer></script>
+    <!-- font-awesome -->
+    <link 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        rel="stylesheet"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <!-- animate css -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        rel="stylesheet"/>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Personal JS -->
+    <script src="./scripts/contentloader.js" type="module" defer></script>
+</head>
+<body>
+    <!--headears buttons -->
+    <header class="fixed-top">        
+        <!-- dark mode button -->
+        <button id="btn-container" class="position-relative btn" onclick="darkLightMode()">
+            <div id="btn-circle"></div>            
+        </button>
+
+        <!-- sing in button -->
+        <button class="d-none d-sm-block mx-4 my-2 position-absolute top-0 end-0 btn border border-2 bord-prim-dark disabled">
+            <a href="#" class="text-decoration-none text-info p-2">sign in</a>
+        </button>
+    </header>
+
+    <!-- pseudo navbar -->
+    <aside></aside>
+
+    <!-- Content -->
+    <main>
+        <section class="main-image">
+            <img src="../images/home_background.png" alt="red cloudy weather">
+        </section>  
+
+        <section class="container-fluid mt-5 pt-5 mx-5">
+            <article class="row mt-5">
+                <div class="col-10 pe-3">
+                    <h2 class="h2 fw-bold">Behind every face there is a <span class="text-danger">story</span>!</h2>
+                </div>
+            </article>
+            
+            <article class="row mt-4">
+                <div class="col-10">
+                    <p class="fs-5">Behind every story, there is a person with hopes, fears, and dreams.<br> 
+                        Always remember the simplest thing can have a profound impact never underestimate the power of a smile, a kind word, or simply listening to someone &apos;s problems.
+                    </p>        
+                </div>
+                <div class="col-12 mt-5 ms-5">
+                    <button class="border border-3 bord-info rounded-3 bg-dark p-2">
+                        <a href="#" class="text-decoration-none text-danger">
+                            <span class="fs-5 fw-bold">Tell me yours!</span>
+                        </a>                    
+                    </button>  
+                </div>                              
+           </article>
+
+           <div class="home-intro-top">
+               <img src="./images/svg/wave-top-home-intro.svg" alt="orange migration">
+           </div>  
+           
+        </section>
+
+        <section class="hero-image">        
+            <div class="home-intro-bot">
+                <img src="./images/svg/wave-bot-home-intro.svg" alt="orange migration">
+            </div>             
+    
+            <img src="./images/migration.png" alt="red transition">             
+
+            <article class="container-fluid mt-5 pt-5" >
+                <div class="row text-start pt-5 ps-5">
+                    <div class="col pt-5 mb-5">
+                        <p class="fs-6 fw-bold text-prim-dark mb-3 pt-5">CORE VALUES</p>
+                        <h2 class="h2">                            
+                            <span class="fw-bold">This is what I will offer</span> <br>
+                            <span>& truly stand for</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row grid-values" style="z-index: 2 !important;"></div>            
+           </article>
+         
+            <div class="home-hero-top">
+                <img src="./images/svg/wave-top-home-hero.svg" alt="transiztion area">
+            </div>                
+                
+        </section>     
+       
+       
+        <section class="main-page"> 
+            
+            <div class="home-hero-bot">
+                <img src="./images/svg/wave-bot-home-hero.svg" alt="transiztion area">
+            </div> 
+
+           <article class="container-fluid mt-5 pt-5" id="success-stories">
+                <div class="row pt-5">
+                    <div class="col ms-5 pt-5">
+                        <p class="fs-6 pt-5 fw-bold text-prim-dark mb-3 pt-5">Personal journey</p>
+                        <h2 class="h2">                            
+                            <span class="fw-bold">Come and see!</span> <br>
+                            <span class="fs-5">Take a little time to see the work done so far</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-11 ms-5">
+                        <button class="border border-3 bord-info rounded-3 bg-dark ms-4 p-2">
+                            <a href="#" class="text-decoration-none text-danger">
+                                <span class="fs-5 fw-bold">See my Projects!</span>
+                            </a>                    
+                        </button>  
+                    </div>
+                </div>
+                <div class="row mt-5 pt-5">
+                    <div class="col-11 ms-5 pt-5">
+                        <h3 class="h3 fw-bold"> Don't let anyone tell you that <span class="text-prim-dark">your idea</span> is bad.</h3>
+                        <p class="fs-5">In the worst case scenario it will be just bad executed!</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-11 ms-5">
+                        <h4 class="h4 fw-bold">We all need a little <span class="text-prim-dark">motivation!</span></h4>
+                        <p class="fs-5">Take the following stories as inspiration.</p>
+                    </div>
+                </div>                  
+           </article>
+ 
+            <footer></footer>
+        </section>
+    </main>
+
+
+    <script src="./scripts/app.js" defer></script>
+</body>
+</html>
